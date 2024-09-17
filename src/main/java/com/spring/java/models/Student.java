@@ -6,16 +6,16 @@ public class Student {
     private String name;
     private String email;
     private String phone;
-    private int idCurso;
+    private Course course;
     private String period;
 
 
-    public Student(int Id, String name, String email, String phone, int idCurso, String period){
+    public Student(int Id, String name, String email, String phone, int i, String period){
         this.id = Id;
         this.name = name;
         this.email = email;
+        this.course = course;
         this.phone = phone;
-        this.idCurso = idCurso;
         this.period = period;
         
     }
@@ -50,11 +50,11 @@ public class Student {
     public void setPhone(String phone) {
         this.phone = phone;
     }
-    public int getIdCurso() {
-        return idCurso;
+    public Course getCourse() {
+        return course;
     }
-    public void setIdCurso(int idCurso) {
-        this.idCurso = idCurso;
+    public void setCourse(Course course) {
+        this.course = course;
     }
     public String getPeriod() {
         return period;
