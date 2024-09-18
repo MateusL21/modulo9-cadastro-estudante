@@ -19,7 +19,7 @@ import com.spring.java.models.Student;
 public class CourseController {
     private List<Course> courses = Arrays.asList(new Course(1, "Java"),
                                                  new Course(2, "Python"),
-                                                 new Course(3, "Java script"));
+                                                 new Course(3, "Java Script"));
 
 
     @GetMapping("courses/{id}")
